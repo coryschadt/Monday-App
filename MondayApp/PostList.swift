@@ -8,23 +8,12 @@
 import SwiftUI
 
 struct PostList: View {
-    
-    @State var posts: [Post] = []
+    @ObservedObject var store = DataStore()
     
     var body: some View {
-        
-        Text("Coools")
-            
-            
-            //        List(posts) { post in
-            //            Text("Cool")
-            //        }
-            .onAppear {
-                Api().getPosts { (posts) in
-                    self.posts = posts
-                    print("rad", posts)
-                }
-            }
+        List(store.posts) { post in
+            Text(post.title)
+        }
     }
 }
 
