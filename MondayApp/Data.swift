@@ -18,6 +18,8 @@ struct PostResponse: Codable {
 struct Post: Codable, Identifiable {
     var id: Int
     var title: String
+    var featureImage: String
+    var excerpt: String
 }
 
 class Api {
