@@ -11,6 +11,9 @@ struct PostList: View {
     @ObservedObject var store = DataStore()
     
     var body: some View {
+        NavigationView {
+            
+        
         ScrollView {
             ForEach(store.posts) { post in
                 VStack(alignment: .leading, spacing: 0.0) {
@@ -22,31 +25,36 @@ struct PostList: View {
                         ProgressView()
                     }
                     .frame(maxHeight: 300)
-                    
-                    
-                    VStack(alignment: .leading) {
-                        HStack(alignment: .top) {
-                            Text(post.title)
-                                .font(.title3).fontWeight(.bold)
-                                .padding(.trailing, 16)
-                            Spacer()
-                            Image(systemName: "arrow.right")
+                    NavigationLink(destination: Text("This is cool")) {
+                        VStack(alignment: .leading) {
+                            HStack(alignment: .top) {
+                                Text(post.title)
+                                    .font(.title3).fontWeight(.bold)
+                                    .padding(.trailing, 16)
+                                Spacer()
+                                Image(systemName: "arrow.right")
+                                    .padding(.top, 5)
+                            }
+                            Text(post.excerpt)
+                                .font(.body)
                                 .padding(.top, 5)
+                            
                         }
-                        Text(post.excerpt)
-                            .font(.body)
-                            .padding(.top, 5)
                         
+                        .padding(.horizontal, 16)
+                        .padding(.top, 20)
                     }
                     .frame(maxWidth: .infinity)
-                    .padding(.horizontal, 16)
-                    .padding(.top, 20)
+                    .foregroundColor(Color.black)
+                    
+      
                 }
                 .padding(.bottom, 50)
                 
             }
         }
         .frame(maxWidth: .infinity)
+    }
     }
 }
 
