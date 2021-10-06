@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0CB693270E05E100F0DD66 /* PostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0CB692270E05E100F0DD66 /* PostDetail.swift */; };
+		0E0CB695270E17A000F0DD66 /* Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0CB694270E17A000F0DD66 /* Testing.swift */; };
 		0EB7AA99270B7DD3009F5293 /* MondayAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7AA98270B7DD3009F5293 /* MondayAppApp.swift */; };
-		0EB7AA9B270B7DD3009F5293 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7AA9A270B7DD3009F5293 /* ContentView.swift */; };
 		0EB7AA9D270B7DD4009F5293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7AA9C270B7DD4009F5293 /* Assets.xcassets */; };
 		0EB7AAA0270B7DD4009F5293 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7AA9F270B7DD4009F5293 /* Preview Assets.xcassets */; };
 		0EB7AAAB270B7DD5009F5293 /* MondayAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7AAAA270B7DD5009F5293 /* MondayAppTests.swift */; };
@@ -36,9 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E0CB692270E05E100F0DD66 /* PostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetail.swift; sourceTree = "<group>"; };
+		0E0CB694270E17A000F0DD66 /* Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testing.swift; sourceTree = "<group>"; };
 		0EB7AA95270B7DD3009F5293 /* MondayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MondayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB7AA98270B7DD3009F5293 /* MondayAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondayAppApp.swift; sourceTree = "<group>"; };
-		0EB7AA9A270B7DD3009F5293 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0EB7AA9C270B7DD4009F5293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EB7AA9F270B7DD4009F5293 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0EB7AAA1270B7DD4009F5293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,13 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				0EB7AA98270B7DD3009F5293 /* MondayAppApp.swift */,
-				0EB7AA9A270B7DD3009F5293 /* ContentView.swift */,
 				0EB7AA9C270B7DD4009F5293 /* Assets.xcassets */,
 				0EB7AAA1270B7DD4009F5293 /* Info.plist */,
 				0EB7AA9E270B7DD4009F5293 /* Preview Content */,
 				0EB7AAC9270B9FFC009F5293 /* DataStore.swift */,
 				0EB7AACE270BA069009F5293 /* Data.swift */,
 				0EB7AAD0270BBFC3009F5293 /* PostList.swift */,
+				0E0CB692270E05E100F0DD66 /* PostDetail.swift */,
+				0E0CB694270E17A000F0DD66 /* Testing.swift */,
 			);
 			path = MondayApp;
 			sourceTree = "<group>";
@@ -268,10 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EB7AA9B270B7DD3009F5293 /* ContentView.swift in Sources */,
+				0E0CB695270E17A000F0DD66 /* Testing.swift in Sources */,
 				0EB7AAD1270BBFC3009F5293 /* PostList.swift in Sources */,
 				0EB7AACA270B9FFC009F5293 /* DataStore.swift in Sources */,
 				0EB7AA99270B7DD3009F5293 /* MondayAppApp.swift in Sources */,
+				0E0CB693270E05E100F0DD66 /* PostDetail.swift in Sources */,
 				0EB7AACF270BA069009F5293 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,7 +480,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6MP57QTTGF;
 				INFOPLIST_FILE = MondayAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -498,7 +502,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6MP57QTTGF;
 				INFOPLIST_FILE = MondayAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
